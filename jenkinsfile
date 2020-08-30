@@ -1,0 +1,8 @@
+node{
+    stage('scm checkout'){
+    git 'https://github.com/sweetygoel/git-test/'
+    }
+    stage('Complie-Package){
+    sh 'mvn package'
+    }
+   }
